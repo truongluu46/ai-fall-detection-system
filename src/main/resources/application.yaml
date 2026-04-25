@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: falldetection
+
+  datasource:
+    # Cấu hình đường dẫn tới DB: jdbc:postgresql://[host]:[port]/[database_name]
+    url: jdbc:postgresql://localhost:5432/ai_db
+    username: postgres
+    password: Dinhluu1259@
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    # ddl-auto:
+    #   update: Tự động cập nhật schema (thêm cột, tạo bảng)
+    #   create: Xóa hết bảng cũ đi tạo lại mỗi lần chạy (cẩn thận!)
+    #   none: Không làm gì cả (dùng cho production)
+    hibernate:
+      ddl-auto: update
